@@ -1,0 +1,109 @@
+body{
+    margin: 2em auto;
+    max-width: 90%;
+    background-color: #f3eae3;
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.image-mobile{
+    max-width: 100%;  
+    border-radius: 10px 10px 0 0;
+}
+.image-desktop{
+    display: none;
+}
+p{
+    font-size: 14px;
+    opacity: 0.5;
+    line-height: 1.5;
+    margin: 0;
+}
+h1,h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: #1d2125;
+}
+.price-color{
+    color: #3d8168;
+}
+h5{
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    font-weight: 400;
+    margin-bottom: -10px;
+}
+h6{
+    opacity: 0.5;
+    font-weight: 400;
+    align-self: center;
+    text-decoration: line-through;
+    font-size: small;
+}
+
+.description{
+    padding: 0 1.3em;
+}
+.price{
+    display: flex;
+    gap: 20px;
+}
+.styled {
+    border: 0;
+    line-height: 3.5;
+    padding: 0 85px 0 120px;
+    font-size: 1rem;
+    font-weight:600;
+    text-align: center;
+    color:#eaf7ff ;
+    border-radius: 10px;
+    background-color: #3d8168;
+    cursor: pointer;
+    align-self: center;
+    background-image: url("../images/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 90px center;
+    margin-bottom: 1.5em;
+}
+button:hover{
+    background-color: #1a4031;
+}
+
+@media screen and (min-width: 720px) {
+    body{
+        display: grid;
+        justify-content: center;
+        margin: 4em auto;
+    }
+    .image-mobile{
+        display: none;
+    }
+    .image-desktop{
+        display: unset;
+        width: 300px;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    main{
+        display: flex;
+        column-gap: 10px;
+        width: 600px;
+    }
+    .styled{
+        padding: 0 60px 0 90px;
+        background-position: 60px center;
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+        .description{
+            padding: 12px 1.6em;
+           
+        }
+        h5{
+            margin-bottom: 0;
+        }
+}
